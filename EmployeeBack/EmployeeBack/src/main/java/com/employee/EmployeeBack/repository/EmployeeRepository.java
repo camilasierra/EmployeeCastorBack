@@ -14,6 +14,6 @@ import com.employee.EmployeeBack.domain.TypeDocument;
 public interface EmployeeRepository extends JpaRepository<Employee, Long>,JpaSpecificationExecutor<Employee>,
 PagingAndSortingRepository<Employee, Long> {
 	
-	public List<Employee>  findByIdTypeDocumentAndNumberDocument(TypeDocument idTypeDocument, Integer numberDocument);
+	public List<Employee>  findByIdTypeDocumentAndNumberDocument(TypeDocument idTypeDocument, Long numberDocument);
 
 }

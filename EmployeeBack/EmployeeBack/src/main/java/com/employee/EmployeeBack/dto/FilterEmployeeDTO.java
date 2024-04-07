@@ -1,6 +1,8 @@
 package com.employee.EmployeeBack.dto;
 
+import java.io.Serializable;
 import java.util.Date;
+
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
@@ -8,18 +10,21 @@ import lombok.Setter;
 @Getter
 @Setter
 @NoArgsConstructor
-public class EmployeeDto {
-
+public class FilterEmployeeDTO implements Serializable{
 	
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 	private Long idEmployee;
 	private String name;
-	private Long numberDocument;
 	private String lastName;
-	private String photo;
-	private Date dateAdmission;
+	private Date fechaInicial;
+	private Date fechaFinal;
     private Long idPosition;
     private Long idTypeDocument;
-    private String codeTypeDocument;
-    private String namePosition;
-
+    private Long numberDocument;
+    private Integer pagina;
+	
+	
 }

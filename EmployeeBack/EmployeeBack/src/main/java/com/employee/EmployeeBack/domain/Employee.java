@@ -30,7 +30,7 @@ public class Employee implements Serializable{
 	private String name;
 	
 	@Column(name = "numberDocument")
-	private Integer numberDocument;
+	private Long numberDocument;
 	
 	@Column(name = "lastName")
 	private String lastName;

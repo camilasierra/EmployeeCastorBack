@@ -11,14 +11,14 @@ import lombok.Setter;
 @NoArgsConstructor
 public class CreateEmployeeRequest {
 	
-	
+	private Long idEmployee;
 	private String name;
 	private String lastName;
 	private String photoBase64;
 	private Date dateAdmission;
     private Long idPosition;
     private Long idTypeDocument;
-    private Integer numberDocument;
+    private Long numberDocument;
     private String namePhoto;
 	
 
